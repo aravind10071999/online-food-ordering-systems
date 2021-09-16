@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<!-- animation for clip-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--menu bar-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+
+
+.card{
+  margin: 5% 0%;
+}
+
+.card-body{
+  margin: 0% 0% 0% 3%;
+  padding: 6% 0%;
+}
+
+.box {
+  transition: box-shadow .3s;
+  width: 300px;
+  height: 500px;
+  margin: 50px;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  
+}
+.box:hover {
+  box-shadow: 0 0 70px rgba(33,33,33,.2); 
+}
+</style>
+</head>
+
+
+
+<body>
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Swiggy</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="order.php">Cart</a></li>
+      
+     
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+     <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+      <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<!--menuitem-->	
+	
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h1><strong>Popular restaurants in and around Coimbatore</strong></h1>
+
+<div class="w3-animate-zoom ">
+
+	<div class="container">
+
+	<!-- Card deck -->
+	<div class="card-deck row">
+
+		<div class="col-xs-12 col-sm-6 col-md-4">
+		<!-- Card -->
+		<div class="card box">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/5b/38/9b/le-meridien-coimbatore.jpg?w=1400&h=-1&s=1" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Le Meridien Coimbatore</h4>
+      <!--Text-->
+      <p class="card-text">762 Avinashi Road Neelambur Village, Coimbatore 641062 India
+</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+     <form method="POST" action="menu.php"> <input class="btn btn-light-blue btn-md" style="background-color:#FFC312" type="submit" name="hotel" value="Le Meridien Menu" ></form>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card mb-4 box">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/02/b6/a1/3e/shree-anandhaas.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Shree Anandhaas</h4>
+      <!--Text-->
+      <p class="card-text">No 747 Puliyakulam Road Lakshmi Mill Junction, Near Kidney Centre Hospital, Coimbatore 641037 India</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+    <form method="POST" action="menu.php" > <input class="btn btn-light-blue btn-md" style="background-color:#FFC312" type="submit" name="hotel" value="Shree Anandhaas Menu" ></form>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card mb-4 box">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/10/1f/56/68/photo2jpg.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Hari Bhavan</h4>
+      <!--Text-->
+      <p class="card-text">64 Avinashi Road Atp Colony Inside Eskepi Hotel Balasundaram Road, Coimbatore 641018 India</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <form method="POST" action="menu.php"> <input class="btn btn-light-blue btn-md" style="background-color:#FFC312" type="submit" name="hotel" value="Hari bhavan Menu" ></form>
+	
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card box">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-l/1a/d6/f1/02/shree-annapoorna.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Shree Annapoorna</h4>
+      <!--Text-->
+      <p class="card-text">75 - East Arockiyaswamy Street R. S Puram, Coimbatore 641001 India</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <form method ="POST" action="menu.php"> <input class="btn btn-light-blue btn-md" style="background-color:#FFC312" type="submit" name="hotel" value="Shree Annapoorna Menu" ></form>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+ 
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card mb-4 box">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-f/12/23/47/35/the-french-door-cafe.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">The French Door Cafe & Restaurant</h4>
+      <!--Text-->
+      <p class="card-text">102 Bashyakaralu Road R S Puram, Coimbatore 641002 India</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <form method="POST" action="menu.php"> <input class="btn btn-light-blue btn-md" style="background-color:#FFC312" type="submit" name="hotel" value="French door menu"></form>
+	   
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">  
+  <!-- Card -->
+  <div class="card mb-4 box">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/f2/6c/0f/outdoor-seating.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Ci Gusta!</h4>
+      <!--Text-->
+      <p class="card-text">Tristar Enlcave, 657, Avinashi Road, Coimbatore. Behind Citi Bank in Lakshmi Mills Signal., Coimbatore 641037 India</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <form method="POST" action="menu.php"> <input class="btn btn-light-blue btn-md" type="submit" style="background-color:#FFC312" name="hotel" value="Ci Gusta Menu" ></form>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card mb-4 box">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-o/11/67/e4/fa/tandoori-tonight.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+   <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Tandoori Tonight
+</h4>
+      <!--Text-->
+      <p class="card-text">490 Avinashi Rd Nava Bus Stop, Udayampalayam, Coimbatore 641006 India</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <form method="POST" action="menu.php"> <input class= "btn btn-light-blue btn-md" type="submit" style="background-color:#FFC312" name="hotel" value="Tandoori Tonight Menu"> </form>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>  
+
+  
+</div>
+<!-- Card deck -->
+  
+</div>
+</div>
+</form>
+
+
+</body>
+</html>
